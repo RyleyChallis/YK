@@ -1,0 +1,42 @@
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #b08d4a;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-container p {
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #888;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 16px 45px;
+    color: #c5a059;
+    border: 2px solid #c5a059;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #c5a059;
+    color: #fff;
+}
