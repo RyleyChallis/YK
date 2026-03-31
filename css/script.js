@@ -22,3 +22,34 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.35
+    });
+
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", reveal);
+
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.navbar');
+    
+    // Check if the page has been scrolled more than 50px
+    if (window.scrollY > 250) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});

@@ -24,30 +24,38 @@
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content">
-            <span class="subtitle">Traditional Artisan Bakery</span>
+        <div class="hero-content reveal">
+            <span class="subtitle reveal">Traditional Artisan Bakery</span>
             <h1>The Heart of Hungary in Sussex</h1>
             <p>Experience the mesmerizing aroma and caramelized crunch of authentic, hand-rolled Kürtőskalács.</p>
-            <a href="#menu" class="btn">Explore Our Flavors</a>
+            <a href="#menu" class="btn reveal">Explore Our Flavors</a>
         </div>
     </header>
 
-    <section id="about" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Baked to Perfection</h2>
-                <div class="divider"></div>
+    <section id="about" class="features reveal">
+        <div class="container about-wrapper">
+            
+            <div class="about-image">
+                <img src="css/img/classic.webp" alt="Freshly baked chimney cake">
+                <div class="image-accent"></div>
             </div>
-            <div class="feature-grid">
-                <div class="feature-card">
+
+            <div class="about-content reveal">
+                <span class="subtitle reveal">Our Story</span>
+                <h2>Baked to Perfection</h2>
+                <div class="underline"></div>
+                
+                <div class="feature-item">
                     <h3>Traditional Recipe</h3>
                     <p>Using time-honored techniques passed down through generations for an authentic taste.</p>
                 </div>
-                <div class="feature-card">
+
+                <div class="feature-item">
                     <h3>Freshly Rolled</h3>
                     <p>Every cake is hand-rolled and baked over an open flame until perfectly golden.</p>
                 </div>
-                <div class="feature-card">
+
+                <div class="feature-item">
                     <h3>Locally Sourced</h3>
                     <p>Proudly serving the Sussex community with the finest local ingredients.</p>
                 </div>
@@ -57,16 +65,16 @@
 
     <section id="showcase" class="product-showcase">
         <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Fresh From The Oven</span>
+            <div class="section-header reveal">
+                <span class="subtitle reveal">Fresh From The Oven</span>
                 <h2>Signature Creations</h2>
                 <div class="divider"></div>
             </div>
 
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card reveal">
                     <div class="product-image">
-                        <div class="image-placeholder icon-cinnamon"></div>
+                        <img src="css/img/classic.webp" class="img">
                         <div class="product-overlay">
                             <span>Best Seller</span>
                         </div>
@@ -77,9 +85,9 @@
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card reveal">
                     <div class="product-image">
-                        <div class="image-placeholder icon-walnut"></div>
+                        <img src="css/img/walnut.webp" class="img">
                     </div>
                     <div class="product-info">
                         <h3>Toasted Walnut</h3>
@@ -87,9 +95,9 @@
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card reveal">
                     <div class="product-image">
-                        <div class="image-placeholder icon-chocolate"></div>
+                        <img src="css/img/cocoa.jpg" class="img">
                     </div>
                     <div class="product-info">
                         <h3>Belgian Cocoa</h3>
@@ -98,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="cta-container">
+            <div class="cta-container reveal">
                 <p>Hungry for more? Explore our seasonal specials and savory options.</p>
                 <a href="#menu" class="btn btn-outline">View Full Menu</a>
             </div>
@@ -107,14 +115,14 @@
 
     <section id="reviews" class="reviews-section">
         <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Trusted by Sussex Locals</span>
+            <div class="section-header reveal">
+                <span class="subtitle reveal">Trusted by Sussex Locals</span>
                 <h2>Guest Experiences</h2>
                 <div class="divider"></div>
             </div>
 
             <div class="reviews-grid">
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">
                         "Found this gem at the Brighton Open Market. Having lived in Budapest, I can safely say these are the most authentic Chimney Cakes in the UK. The cinnamon smell is heavenly!"
@@ -125,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">
                         "Absolutely delicious. Crispy and caramelized on the outside, soft and fluffy on the inside. The walnut topping is a must-try. Such a unique treat for Sussex!"
@@ -136,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">
                         "Watching them make the cakes fresh on the spit is half the fun. My kids loved the chocolate version. Great service and even better flavors. We'll be back every weekend."
@@ -150,30 +158,58 @@
         </div>
     </section>
 
-    <section id="menu" class="menu-preview">
+    <section id="menu" class="menu-section">
         <div class="container">
-            <div class="menu-card">
-                <div class="menu-info">
-                    <h2>Our Signature Collection</h2>
-                    <ul class="menu-list">
-                        <li>
-                            <span class="item">The Classic Cinnamon</span>
+            <div class="section-header reveal">
+                <span class="subtitle reveal">Hand-Rolled & Spit-Roasted</span>
+                <h2>Our Signature Collection</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h4>The Classic Cinnamon</h4>
                             <span class="price">£6.50</span>
-                        </li>
-                        <li>
-                            <span class="item">Toasted Walnut & Honey</span>
-                            <span class="price">£7.00</span>
-                        </li>
-                        <li>
-                            <span class="item">Zesty Raspberry Glaze</span>
-                            <span class="price">£7.50</span>
-                        </li>
-                        <li>
-                            <span class="item">The Sussex Special (Savory)</span>
-                            <span class="price">£8.00</span>
-                        </li>
-                    </ul>
+                        </div>
+                        <p>Traditional Hungarian recipe. Dusted in organic Ceylon cinnamon and caramelized sugar.</p>
+                    </div>
                 </div>
+
+                <div class="menu-card reveal">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h4>Toasted Walnut & Honey</h4>
+                            <span class="price">£7.00</span>
+                        </div>
+                        <p>Rolled in crushed Sussex walnuts and drizzled with local honey for a rich, earthy crunch.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h4>Zesty Raspberry Glaze</h4>
+                            <span class="price">£7.50</span>
+                        </div>
+                        <p>A vibrant, sharp raspberry reduction finished with a dusting of freeze-dried berry pieces.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h4>The Sussex Special (Savory)</h4>
+                            <span class="price">£8.00</span>
+                        </div>
+                        <p>Our unique savory twist: Sussex sea salt, cracked black pepper, and aged parmesan cheese.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-footer reveal">
+                <p>* All cakes are baked fresh to order. Vegan options available on request.</p>
             </div>
         </div>
     </section>
@@ -182,12 +218,12 @@
         <div class="container">
             <div class="visit-grid">
                 
-                <div class="visit-card">
+                <div class="visit-card reveal">
                     <span class="subtitle">Experience Yummy Kurtos</span>
                     <h2>Three Ways to Enjoy</h2>
                     <div class="divider-left"></div>
                     
-                    <div class="option-item">
+                    <div class="option-item reveal">
                         <div class="option-icon">01</div>
                         <div class="option-text">
                             <h4>Visit Our Shop & Stall</h4>
@@ -195,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="option-item">
+                    <div class="option-item reveal">
                         <div class="option-icon">02</div>
                         <div class="option-text">
                             <h4>Click & Collect</h4>
@@ -203,7 +239,7 @@
                         </div>
                     </div>
 
-                    <div class="option-item">
+                    <div class="option-item reveal">
                         <div class="option-icon">03</div>
                         <div class="option-text">
                             <h4>Event Catering</h4>
@@ -212,12 +248,12 @@
                     </div>
                 </div>
 
-                <div class="visit-image-box">
+                <div class="visit-image-box reveal">
                     <div class="promo-box">
                         <h3>Baked Fresh Daily</h3>
                         <p>Traditional techniques, local Sussex ingredients.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.285780233864!2d-0.1423884230746802!3d50.82587027166634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487585e887d19fb7%3A0x6aae0de9d22a1ac7!2zWXVtbXkgS8WpcnTDtXM!5e0!3m2!1sen!2suk!4v1774945937419!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <a href="#contact" class="btn">Get Directions</a>
+                        <a href="#contact" class="btn reveal">Get Directions</a>
                     </div>
                 </div>
 
@@ -229,10 +265,10 @@
         <div class="container">
             <div class="footer-content">
                 
-                <div class="footer-col brand-col">
-                    <h2 class="footer-logo">YUMMY<span>KURTOS</span></h2>
-                    <p>Bringing the caramelized soul of traditional Hungarian chimney cakes to the heart of Sussex.</p>
-                    <div class="footer-socials">
+                <div class="footer-col brand-col reveal">
+                    <h2 class="footer-logo reveal">YUMMY<span>KURTOS</span></h2>
+                    <p class="reveal">Bringing the caramelized soul of traditional Hungarian chimney cakes to the heart of Sussex.</p>
+                    <div class="footer-socials reveal">
                         <a href="#" aria-label="Instagram">IG</a>
                         <a href="#" aria-label="Facebook">FB</a>
                         <a href="#" aria-label="TikTok">TK</a>
@@ -240,8 +276,8 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-title">The Bakery Shop</h4>
-                    <ul class="footer-links">
+                    <h4 class="footer-title reveal">The Bakery Shop</h4>
+                    <ul class="footer-links reveal">
                         <li>123 North Road</li>
                         <li>Brighton, BN1 1YB</li>
                         <li class="highlight">Tue - Sat: 10am - 6pm</li>
@@ -249,8 +285,8 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-title">The Market Stall</h4>
-                    <ul class="footer-links">
+                    <h4 class="footer-title reveal">The Market Stall</h4>
+                    <ul class="footer-links reveal">
                         <li>Brighton Open Market</li>
                         <li>Marshalls Row, BN1 4JU</li>
                         <li class="status-indicator">Live: Find us here today!</li>
@@ -258,8 +294,8 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-title">Contact Us</h4>
-                    <ul class="footer-links">
+                    <h4 class="footer-title reveal">Contact Us</h4>
+                    <ul class="footer-links reveal">
                         <li><a href="mailto:hello@yummykurtos.com">hello@yummykurtos.com</a></li>
                         <li><a href="tel:+447700900000">07700 900000</a></li>
                         <li><a href="#menu">Catering & Events</a></li>
@@ -268,7 +304,7 @@
 
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer-bottom reveal">
                 <p>&copy; 2026 Yummy Kurtos. Hand-rolled in Sussex.</p>
                 <div class="footer-legal">
                     <a href="privacy.html">Privacy</a>
