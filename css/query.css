@@ -280,9 +280,15 @@
         max-width: 90%;
         width: 90%
     }
+    .about-image {
+        flex: 1;
+        max-width: 350px;
+        width: 100%;
+        position: relative;
+    }
     .about-content {
         max-width: 100%;
-        width: 100%:
+        width: 100%;
     }
     .feature-item p {
         max-width: 100%;
