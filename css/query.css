@@ -273,41 +273,46 @@
 }
 
 @media (max-width: 380px) {
-    .container {
-        max-width: none !important;
-    }
-    body h2 {
-        font-size: 1.6rem !important;
+    *, *::before, *::after {
+        box-sizing: border-box !important;
     }
 
-    .menu-section::before {
-        display: none;
-    }
-
-    /* Tighten the menu grid */
-    .menu-grid {
-        max-width: 95% !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .menu-grid .menu-card .menu-header {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 5px;
-    }
-
-    .menu-header h4 {
-        max-width: 100% !important;
+    html, body {
+        overflow-x: hidden !important;
         width: 100% !important;
-        font-size: 1.15rem !important;
+        position: relative;
+        margin: 0;
+        padding: 0;
     }
 
-    #menu .menu-card {
-        max-width: 100%;
-        width: 100%;
+    .container, 
+    section, 
+    header, 
+    footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin: 0 auto !important;
+        overflow: hidden;
+    }
+
+    h1, h2, h3, h4, p, span {
+        text-align: center !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        max-width: 100% !important;
+    }
+
+    body h2 {
+        font-size: 1.5rem !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto !important;
     }
 
     .footer-bottom {
@@ -315,18 +320,13 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        text-align: center !important; 
+        text-align: center !important;
         width: 100% !important;
-        margin: 0 auto !important;
-        padding: 15px 0 !important;
     }
 
-    .footer-bottom p,
-    .footer-bottom .footer-links,
+    .footer-bottom p, 
     .footer-bottom a {
-        white-space: normal !important; 
-        display: block !important;
-        width: 100% !important;
-        margin: 4px 0 !important;
+        white-space: normal !important;
+        margin: 5px 0 !important;
     }
 }
