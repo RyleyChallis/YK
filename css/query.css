@@ -345,6 +345,11 @@
         margin-right: 0;
     }
     
+    .feature-item p {
+        max-width: 300px !important;
+        width: 100% !important;
+    }
+
     .about-content .subtitle,
     .about-content .underline {
         margin-left: auto;
