@@ -294,7 +294,7 @@
 
 @media (max-width: 420px) {
     body nav .nav-links .logo {
-        font-size: 0.4rem !important;
+        font-size: 1rem !important;
     }
     #about .container {
         padding-left: 0;
