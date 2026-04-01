@@ -372,7 +372,9 @@
     .review-card p {
         font-size: 0.9rem !important;
     }
-
+    .promo-box h4 {
+        font-size: 2rem;
+    }
     .footer-logo {
         font-size: 1.4rem !important;
     }
