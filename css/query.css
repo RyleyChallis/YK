@@ -272,3 +272,20 @@
     }
 }
 
+@media (max-width: 380px) {
+    .hero h1 {
+        max-width: 300px;
+    }
+    #about .container {
+        max-width: 90%;
+        width: 90%
+    }
+    .about-content {
+        max-width: 100%;
+        width: 100%:
+    }
+    .feature-item p {
+        max-width: 100%;
+        width: 100%;
+    }
+}
