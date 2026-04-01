@@ -260,6 +260,7 @@ section::after {
     background-position: center;
     transition: transform 0.6s ease;
     object-fit: cover;
+    aspect-ratio: 1 / 1 !important;
 }
 
 .product-card:hover img {
