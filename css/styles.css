@@ -76,7 +76,7 @@ section::after {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1600&q=80'); /* Placeholder image of a bakery */
+                url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -120,7 +120,7 @@ section::after {
 }
 
 #about {
-    background-color: #fdfaf5; /* A soft, warm cream */
+    background-color: #fdfaf5;
     padding: 100px 0;
 }
 
@@ -128,10 +128,9 @@ section::after {
     display: flex;
     align-items: center;
     gap: 80px;
-    flex-wrap: wrap; /* Fixes layout on mobile */
+    flex-wrap: wrap;
 }
 
-/* Image Side */
 .about-image {
     flex: 1;
     min-width: 350px;
@@ -208,7 +207,7 @@ section::after {
 
 .subtitle {
     display: block;
-    color: #c5a059; /* Gold accent */
+    color: #c5a059;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 0.8rem;
@@ -232,17 +231,17 @@ section::after {
 
 .product-card {
     background: #fff;
-    border-radius: 6px; /* Smoother corners */
+    border-radius: 6px;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Professional easing */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Very subtle base shadow */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0,0,0,0.03);
     width: 375px;
 }
 
 .product-card:hover {
     transform: translateY(-12px);
-    transform: translateY(-10px); /* Lifts the card up */
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(197, 160, 89, 0.15);
 }
 
@@ -289,7 +288,7 @@ section::after {
 }
 
 .product-info h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'playfair display', serif;
     font-size: 1.4rem;
     color: var(--primary);
     margin-bottom: 12px;
@@ -396,7 +395,7 @@ section::after {
     position: absolute;
     top: 25%;
     font-size: 12rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'playfair display', serif;
     font-weight: 900;
     color: rgba(0,0,0,0.05);
     transform: translateY(-50%);

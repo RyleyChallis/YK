@@ -310,9 +310,8 @@
         box-sizing: border-box;
     }
 
-    /* 2. Strictly center the text container */
     .about-content {
-        padding: 0 15px; /* Symmetrical padding so it doesn't touch edges */
+        padding: 0 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -321,12 +320,12 @@
         max-width: 100% !important;
     }
 
-    /* 3. Strictly center the image container */
     .about-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         padding: 0 15px; 
+        margin: 0 auto !important
     }
 
     .about-image img {

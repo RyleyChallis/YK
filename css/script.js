@@ -5,7 +5,7 @@ const links = document.querySelectorAll('.nav-links li a');
 const closeMenu = () => {
     navLinks.classList.remove('active');
     menuToggle.classList.remove('active');
-    document.querySelector('.overlay').classList.remove('active'); // Add this line
+    document.querySelector('.overlay').classList.remove('active');
     document.body.style.overflow = 'initial';
 };
 
@@ -13,7 +13,7 @@ menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     navLinks.classList.toggle('active');
     menuToggle.classList.toggle('active');
-    document.querySelector('.overlay').classList.toggle('active'); // Add this line
+    document.querySelector('.overlay').classList.toggle('active');
     
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'initial';
 });
