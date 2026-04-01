@@ -297,10 +297,10 @@
         padding: 15px;
     }
     #showcase {
-        scroll-margin-top: -10px !important;
+        scroll-margin-top: 10px !important;
     }
     #order-visit {
-        scroll-margin-top: -10px !important;
+        scroll-margin-top: 10px !important;
     }
     #about .container {
         padding-left: 0;
