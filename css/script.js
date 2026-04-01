@@ -1,3 +1,35 @@
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li a');
+
+const closeMenu = () => {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('active');
+    document.querySelector('.overlay').classList.remove('active'); // Add this line
+    document.body.style.overflow = 'initial';
+};
+
+menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    document.querySelector('.overlay').classList.toggle('active'); // Add this line
+    
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'initial';
+});
+
+document.querySelector('.overlay').addEventListener('click', closeMenu);
+
+links.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        closeMenu();
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('a[href]');
 
@@ -46,8 +78,7 @@ document.addEventListener("DOMContentLoaded", reveal);
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.navbar');
     
-    // Check if the page has been scrolled more than 50px
-    if (window.scrollY > 250) {
+    if (window.scrollY > 150) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');

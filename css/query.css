@@ -1,0 +1,274 @@
+@media (max-width: 1100px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    #about .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #showcase .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+    .product-card {
+        width: 100%;
+        max-width: 450px;
+    }
+    .product-card:last-child {
+        max-width: 450px;
+        width: 100%;
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .reviews-section .container .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        row-gap: 50px;
+    }
+    .review-card {
+        max-width: 400px;
+        width: 100%;
+    }
+    .review-card:last-child {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .menu-section::before {
+        content: "ARTISAN";
+        position: absolute;
+        top: 87%;
+        font-size: 12rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 900;
+        color: rgba(0,0,0,0.05);
+        transform: translateY(-50%);
+        z-index: 0;
+        pointer-events: none;
+    }
+    .visit-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .visit-image-box {
+        max-width: 100%;
+        width: 100%;
+    }
+    .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 40px;
+        text-align: center;
+    }
+    .brand-col {
+        grid-column: 1 / -1; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .brand-col p {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        z-index: 10002 !important;
+        position: relative;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 60%;
+        height: 100vh;
+        background: #121212;
+        z-index: 10001 !important;
+        position: fixed;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .nav-links.active {
+        right: 0;
+        z-index: 10001 !important;
+    }
+    .nav-links .logo {
+        color: white !important;
+        display: flex;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .nav-links li {
+        margin: 20px 0;
+    }
+    .nav-links li a {
+        color: white !important;
+    }
+    .nav-links a:hover {
+        color: var(--primary);
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        z-index: 10000 !important;
+    }
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .hero h1 {
+        font-size: 2.3rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #showcase .product-grid {
+        grid-template-columns: 1fr;
+    }
+    #reviews .reviews-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        gap: 40px;
+    }
+    .review-card {
+        width: 100%;
+        max-width: 425px;
+        margin: 0 auto;
+    }
+    .review-card:last-child {
+        width: 100%;
+        max-width: 425px;
+        margin: 0 auto;
+    }
+    .menu-section::before {
+        content: "ARTISAN";
+        position: absolute;
+        top: 24%;
+        font-size: 8rem;
+    }
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 50px;
+        text-align: center;
+    }
+    .brand-col {
+        margin-bottom: 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .footer-section ul li {
+        margin-bottom: 12px;
+    }
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+    }
+    .footer-bottom p {
+        max-width: 200px;
+    }
+    .footer-bottom .footer-legal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 630px) {
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 1rem;
+        max-width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    h2 {
+        font-size: 2.4rem !important;
+    }
+    #menu .menu-card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body h2 {
+        font-size: 1.9rem !important;
+    }
+    .menu-section::before {
+        display: none;
+    }
+    .menu-grid {
+        max-width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .menu-grid .menu-card .menu-header {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .menu-header h4 {
+        max-width: 90%;
+        font-size: 1.3rem !important;
+    }
+    #menu .menu-card {
+        max-width: 100%;
+        width: 100%;
+    }
+    body footer .container .footer-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        width: 100% !important;
+        align-items: center !important;
+        text-align: center !important; 
+        margin: 0 auto !important;
+    }
+    .footer-bottom p,
+    .footer-bottom a {
+        white-space: nowrap;
+    }
+}
+
