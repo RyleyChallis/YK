@@ -273,7 +273,9 @@
 }
 
 @media (max-width: 380px) {
-    /* Scale down headings for tiny screens */
+    .container {
+        max-width: none !important;
+    }
     body h2 {
         font-size: 1.6rem !important;
     }
