@@ -293,6 +293,9 @@
 }
 
 @media (max-width: 420px) {
+    nav {
+        padding: 15px;
+    }
     #order-visit {
         scroll-margin-top: 300px;
     }
