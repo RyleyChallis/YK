@@ -257,6 +257,22 @@
         max-width: 100%;
         width: 100%;
     }
+    
+    .reviews-grid {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .review-card {
+        max-width: 370px !important;
+        width: 80vw !important;
+    }
+
+    .review-card p {
+        font-size: 1rem !important;
+    }
     body footer .container .footer-bottom {
         display: flex !important;
         flex-direction: column !important;
@@ -273,64 +289,148 @@
 }
 
 @media (max-width: 380px) {
-    *, *::before, *::after {
-        box-sizing: border-box !important;
-    }
-
-    html, body {
-        overflow-x: hidden !important;
+    /* 1. Strip away any inherited desktop margins/padding */
+    #about .container {
+        padding-left: 0;
+        padding-right: 0;
         width: 100% !important;
-        position: relative;
-        margin: 0;
-        padding: 0;
+        max-width: 100% !important;
+        overflow-x: hidden;
     }
 
-    .container, 
-    section, 
-    header, 
-    footer {
+    .about-content,
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0 !important; /* Forces reset of desktop spacing */
+        margin-right: 0 !important;
+        box-sizing: border-box;
+    }
+
+    /* 2. Strictly center the text container */
+    .about-content {
+        padding: 0 15px; /* Symmetrical padding so it doesn't touch edges */
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 100% !important;
         max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin: 0 auto !important;
-        justify-content: center !important;
-        align-items: center !important;
-        overflow: hidden;
     }
 
-    h1, h2, h3, h4, p, span {
-        text-align: center !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        max-width: 100% !important;
+    /* 3. Strictly center the image container */
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px; 
     }
 
-    body h2 {
-        font-size: 1.5rem !important;
-    }
-
-    img {
-        max-width: 100% !important;
-        height: auto !important;
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
         display: block;
-        margin: 0 auto !important;
     }
 
-    .footer-bottom {
+    .feature-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .about-content .subtitle,
+    .about-content .underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reviews-grid {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-card {
+        max-width: 370px !important;
+        width: 80vw !important;
+    }
+
+    .review-card p {
+        font-size: 0.9rem !important;
+    }
+
+    .footer-logo {
+        font-size: 1.4rem !important;
+    }
+
+    .footer-content {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
         width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .footer-col {
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col ul {
+        padding: 0 !important;
+        list-style: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col li {
+        text-align: center !important;
+        margin: 5px 0 !important;
+    }
+
+    .status-indicator {
+        justify-content: center !important;
+        margin-top: 10px !important;
+    }
+
+    .footer-bottom {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .footer-bottom p, 
+    .footer-bottom .footer-legal,
     .footer-bottom a {
+        max-width: 100% !important; 
+        width: auto !important;
+        display: inline-block !important;
+        margin: 5px auto !important;
         white-space: normal !important;
-        margin: 5px 0 !important;
+    }
+
+    .footer-legal {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px;
     }
 }
