@@ -296,8 +296,8 @@
     nav {
         padding: 15px;
     }
-    #order-visit {
-        scroll-margin-top: 300px;
+    #showcase {
+        scroll-margin-top: -40px;
     }
     #about .container {
         padding-left: 0;
