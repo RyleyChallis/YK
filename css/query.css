@@ -293,6 +293,9 @@
 }
 
 @media (max-width: 420px) {
+    .nav-links .logo {
+        font-size: 1.2rem;
+    }
     #about .container {
         padding-left: 0;
         padding-right: 0;
