@@ -293,8 +293,8 @@
 }
 
 @media (max-width: 420px) {
-    .nav-links .logo {
-        font-size: 1.2rem;
+    body nav .nav-links .logo {
+        font-size: 0.4rem !important;
     }
     #about .container {
         padding-left: 0;
