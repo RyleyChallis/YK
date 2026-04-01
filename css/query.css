@@ -289,11 +289,15 @@
     section, 
     header, 
     footer {
+        display: flex;
+        flex-direction: column;
         width: 100% !important;
         max-width: 100% !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
         margin: 0 auto !important;
+        justify-content: center !important;
+        align-items: center !important;
         overflow: hidden;
     }
 
