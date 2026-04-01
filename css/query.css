@@ -293,9 +293,6 @@
 }
 
 @media (max-width: 420px) {
-    #order-visit {
-        scroll-margin-top: 300px;
-    }
     #about .container {
         padding-left: 0;
         padding-right: 0;
