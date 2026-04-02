@@ -185,10 +185,11 @@ section::after {
 .product-showcase {
     padding: 100px 0;
     background-color: var(--light-two);
+    scroll-margin-top: 60px;
 }
 
 #showcase {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 60px !important;
 }
 
 #showcase .container {
@@ -475,7 +476,7 @@ section::after {
 .visit-section {
     padding: 100px 0;
     background-color: var(--light);
-    scroll-margin-top: 60px;
+    scroll-margin-top: 60px !important;
 }
 
 .visit-grid {
