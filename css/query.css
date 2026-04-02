@@ -449,6 +449,6 @@
     .footer-legal {
         display: flex !important;
         flex-direction: column !important;
-        gap: 10px;
+        gap: 30px;
     }
 }
