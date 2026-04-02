@@ -187,6 +187,10 @@ section::after {
     background-color: var(--light-two);
 }
 
+#showcase {
+    scroll-margin-top: 60px;
+}
+
 #showcase .container {
     max-width: 80%;
     display: flex;
@@ -245,8 +249,8 @@ section::after {
     box-shadow: 0 20px 40px rgba(197, 160, 89, 0.15);
 }
 
-.product-image {
-    height: 350px;
+.product-image img {
+    width: 100%;
     overflow: hidden;
     position: relative;
     background: #fafafa;
@@ -471,6 +475,7 @@ section::after {
 .visit-section {
     padding: 100px 0;
     background-color: var(--light);
+    scroll-margin-top: 60px;
 }
 
 .visit-grid {
